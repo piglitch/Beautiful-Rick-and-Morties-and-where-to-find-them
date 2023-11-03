@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
+
+body{
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 20px;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: url('./assets/1330376.png') no-repeat;
+  background-size: cover;
+  color: greenyellow;
+  background-position: center;
+}
+.charDiv{
+  margin-top: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2px;
+}
+.char-input{
+  background: black;
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  border-top: none;
+}
+.details{
+  border: 1px solid greenyellow;
+  width: 450px;
+  height: 250px;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: greenyellow;
+  font-size: larger;
+  font-weight: 900;
+}
+.char-image{
+  width: 344px;
+  height: 350px;
+  backdrop-filter: blur(5px);
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 240px;
+}
+.buttons button{
+  padding: 15px;
+  width: 230px;
+  border: 5px solid crimson;
+  border-radius: 15px;
+  background: black;
+  color: crimson;
+  text-align: center;
+  font-size: larger;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.buttons button:hover{
+  background: greenyellow;
+}
+.locArea{
+  width: 450px;
+  height: 200px;
+  border: 1px solid greenyellow;
+  padding: 50px;
+  color: greenyellow;
+  font-size: larger;
+  font-weight: 900;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  background:  rgba(0, 0, 0, 0.5);
+}
+.locInput{
+  width: 480px;
+  padding: 5px;
+  background: none;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  color: greenyellow;
+  outline: none;
+}
+.locInputDiv{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  width: 536px;
+  padding: 8px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  gap: 10px;
+  border-top: none;
+  padding-bottom: 15px;
+}
+.locDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+}
+.locSubmit{
+  background : none;
+  color : greenyellow;
+  border : 1px solid greenyellow;
+  border-radius: 5px;
+  padding : 5px;
+  cursor : pointer;
+  transition: background .2s ease-in-out;
+  width: 150px;
+}
+.locSubmit:hover{
+  background : greenyellow;
+  color: black;
+}
+.sbmtBtn{
+  padding: 5px;
+  background: none;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  color: greenyellow;  
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+.sbmtBtn:hover{
+  color: black;
+  background: greenyellow;
+}
+.epiArea{  
+  width: 450px;
+  height: 200px;
+  border: 1px solid greenyellow;
+  padding: 50px;
+  color: greenyellow;
+  font-size: larger;
+  font-weight: 900;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  background:  rgba(0, 0, 0, 0.5);
+}
+.epiInputDiv{  
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  width: 534px;
+  padding: 8px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  gap: 10px;
+  border-top: none;
+  padding-bottom: 15px;
+}
+.epiDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+}
+.epiInput{
+  width: 480px;
+  padding: 5px;
+  background: none;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  color: greenyellow;
+  outline: none;
+}
+.epiSubmit{
+  background : none;
+  color : greenyellow;
+  border : 1px solid greenyellow;
+  border-radius: 5px;
+  padding : 5px;
+  cursor : pointer;
+  transition: background .2s ease-in-out;
+  width: 150px;
+}
+.epiSubmit:hover{
+  color: black;
+  background: greenyellow;
+}
+.closeModal{
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 30rem;
+  fill: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: fill .3s ease-in-out;
+  transition: scale .3s ease-in-out;
+}
+.closeModal:hover{
+  scale: 1.5;
+  fill: rgb(255, 0, 0);
+}
+.closecharModal{  
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 48rem;
+  fill: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: fill .3s ease-in-out;
+  transition: scale .3s ease-in-out;
+}
+.closecharModal:hover{
+  scale: 1.5;
+  fill: rgb(255, 0, 0);
+}
