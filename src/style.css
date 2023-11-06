@@ -1,15 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
 
+
+  /* Styles for screens smaller than 768px wide */
+  /* Adjust font sizes, margins, padding, etc. */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+  body{
+    font-size: smaller;
+  }
+  .details, .locArea, .epiArea, .aboutContainer, .char-image, .locDiv, .epiDiv, .charDiv {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .locInput, .epiInput, .locSubmit, .sbmtBtn, .epiSubmit {
+        max-width: none;
+        font-size: x-small;
+    }
+}
+  
+
 body{
   font-family: 'IBM Plex Mono', monospace;
-  margin: 20px;
   justify-content: center;
+  margin: 0;
   height: 100vh;
-  overflow: hidden;
   background: url('./assets/rickandmortwall.png') no-repeat;
   background-size: cover;
   color: greenyellow;
   background-position: center;
+  background-attachment: fixed;
 }
 .charDiv{
   margin-top: 180px;
@@ -48,25 +73,26 @@ body{
 }
 .buttons{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 240px;
+  align-items: center;  
+  width: 100%;
 }
 .buttons button{
-  padding: 15px;
-  width: 230px;
-  border: 5px solid crimson;
-  border-radius: 15px;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 25px;
+  width: 100%;
+  border: none;
   background: black;
-  color: crimson;
+  color: white;
   text-align: center;
   font-size: larger;
   font-weight: 900;
   cursor: pointer;
   transition: background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 .buttons button:hover{
   background: greenyellow;
+  color: black;
 }
 .locArea{
   width: 450px;
@@ -212,4 +238,18 @@ body{
 .closecharModal:hover{
   scale: 1.5;
   fill: rgb(255, 0, 0);
+}
+.aboutContainer{
+  padding: 25px;
+  border-left: 1px solid greenyellow;
+  border-right: 1px solid greenyellow;
+  backdrop-filter: blur(5px);
+  background:  rgba(0, 0, 0, 0.8);
+}
+.instagram, .github, .email{
+  cursor: pointer;
+  color: white;
+}
+.instagram:hover, .github:hover, .email:hover{
+  color: rgb(117, 190, 233);
 }

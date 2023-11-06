@@ -18,10 +18,14 @@ export default function charLocEpi() {
   episodeButton.classList.add('episode');
   episodeButton.textContent = 'Episodes';
 
+  const aboutButton = document.createElement('button');
+  aboutButton.classList.add('about');
+  aboutButton.textContent = 'About';
   // Append the buttons to the buttons div
   buttonsDiv.appendChild(characterButton);
   buttonsDiv.appendChild(locationButton);
   buttonsDiv.appendChild(episodeButton);
+  buttonsDiv.appendChild(aboutButton);
 
   // Append the buttons div to the body or another parent element
   document.body.appendChild(buttonsDiv);
