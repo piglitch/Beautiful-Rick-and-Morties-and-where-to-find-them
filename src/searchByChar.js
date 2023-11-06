@@ -44,6 +44,10 @@ const characterFactory = () => {
     const detailsDiv = document.createElement('div');
     detailsDiv.classList.add('details');
 
+    const closeImg = document.createElement('div');
+    closeImg.classList.add('closeModal');
+    closeImg.innerHTML = crossImg;
+
     const nameDiv = document.createElement('div');
     nameDiv.classList.add('name');
     nameDiv.style.marginTop = '20px';
@@ -74,6 +78,7 @@ const characterFactory = () => {
     charInputDiv.appendChild(charInput);
     charInputDiv.appendChild(submitButton);
 
+    detailsDiv.appendChild(closeImg);
     detailsDiv.appendChild(nameDiv);
     detailsDiv.appendChild(speciesDiv);
     detailsDiv.appendChild(genderDiv);
@@ -84,15 +89,10 @@ const characterFactory = () => {
     charImageAndInputDiv.appendChild(charImageDiv);
     charImageAndInputDiv.appendChild(charInputDiv);
 
-    const closeImg = document.createElement('div');
-    closeImg.classList.add('closecharModal');
-    closeImg.innerHTML = crossImg;
-
     const charDiv = document.createElement('div');
     charDiv.classList.add('charDiv');
     charDiv.appendChild(charImageAndInputDiv);
     charDiv.appendChild(detailsDiv);
-    charDiv.appendChild(closeImg);
     // Append everything to the body
     body.appendChild(charDiv);
 

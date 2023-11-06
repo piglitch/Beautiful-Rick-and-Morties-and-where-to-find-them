@@ -19,6 +19,10 @@ const episodeFactory = () => {
     epiDisplayArea.classList.add('epiArea');
     document.body.appendChild(epiDisplayArea);
 
+    const closeImg = document.createElement('div');
+    closeImg.classList.add('closeModal');
+    closeImg.innerHTML = crossImg;
+
     const epiName = document.createElement('div');
     epiName.textContent = 'Episode name: ';
 
@@ -30,6 +34,7 @@ const episodeFactory = () => {
     epiNum.textContent = 'Episode number: ';
     epiNum.style.marginTop = '20px';
 
+    epiDisplayArea.appendChild(closeImg);
     epiDisplayArea.appendChild(epiName);
     epiDisplayArea.appendChild(airDate);
     epiDisplayArea.appendChild(epiNum);
@@ -47,10 +52,6 @@ const episodeFactory = () => {
     epiSubmit.textContent = 'Submit';
     epiSubmit.classList.add('epiSubmit');
 
-    const closeImg = document.createElement('div');
-    closeImg.classList.add('closeModal');
-    closeImg.innerHTML = crossImg;
-
     const epiDiv = document.createElement('div');
     epiDiv.classList.add('epiDiv');
     epiInputDiv.appendChild(epiLabel);
@@ -58,7 +59,6 @@ const episodeFactory = () => {
     epiInputDiv.appendChild(epiSubmit);
     epiDiv.appendChild(epiDisplayArea);
     epiDiv.appendChild(epiInputDiv);
-    epiDiv.appendChild(closeImg);
     document.body.appendChild(epiDiv);
 
     epiSubmit.addEventListener('click', () => {

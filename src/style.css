@@ -76,8 +76,8 @@ body{
   background: rgba(0, 0, 0, 0.5);
 }
 .image-char{
-  max-width: 344px;
-  max-height: 350px;
+  width: 344px;
+  height: 350px;
 }
 .buttons{
   display: flex;
@@ -95,11 +95,10 @@ body{
   font-size: larger;
   font-weight: 900;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .buttons button:hover{
-  background: greenyellow;
+  background: rgb(185, 185, 185);
   color: black;
 }
 .locArea{
@@ -222,28 +221,12 @@ body{
   background: greenyellow;
 }
 .closeModal{
-  position: absolute;
-  margin-top: 1rem;
-  margin-left: 30rem;
-  fill: rgba(255, 255, 255, 0.3);
+  fill: rgb(133, 133, 133);
+  margin-left: 420px;
   cursor: pointer;
-  transition: fill .3s ease-in-out;
-  transition: scale .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .closeModal:hover{
-  scale: 1.5;
-  fill: rgb(255, 0, 0);
-}
-.closecharModal{  
-  position: absolute;
-  margin-top: 1rem;
-  margin-left: 48rem;
-  fill: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  transition: fill .3s ease-in-out;
-  transition: scale .3s ease-in-out;
-}
-.closecharModal:hover{
   scale: 1.5;
   fill: rgb(255, 0, 0);
 }

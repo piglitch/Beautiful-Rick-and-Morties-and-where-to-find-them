@@ -20,6 +20,10 @@ const LocationFactory = () => {
     locDisplayArea.classList.add('locArea');
     document.body.appendChild(locDisplayArea);
 
+    const closeImg = document.createElement('div');
+    closeImg.classList.add('closeModal');
+    closeImg.innerHTML = crossImg;
+
     const planet = document.createElement('div');
     planet.textContent = 'Planet: ';
 
@@ -31,6 +35,7 @@ const LocationFactory = () => {
     locType.textContent = 'Type: ';
     locType.style.marginTop = '20px';
 
+    locDisplayArea.appendChild(closeImg);
     locDisplayArea.appendChild(planet);
     locDisplayArea.appendChild(dimension);
     locDisplayArea.appendChild(locType);
@@ -48,10 +53,6 @@ const LocationFactory = () => {
     locSubmit.textContent = 'Submit';
     locSubmit.classList.add('locSubmit');
 
-    const closeImg = document.createElement('div');
-    closeImg.classList.add('closeModal');
-    closeImg.innerHTML = crossImg;
-
     const locDiv = document.createElement('div');
     locDiv.classList.add('locDiv');
     locInputDiv.appendChild(locLabel);
@@ -59,7 +60,6 @@ const LocationFactory = () => {
     locInputDiv.appendChild(locSubmit);
     locDiv.appendChild(locDisplayArea);
     locDiv.appendChild(locInputDiv);
-    locDiv.appendChild(closeImg);
     document.body.appendChild(locDiv);
 
     locSubmit.addEventListener('click', () => {

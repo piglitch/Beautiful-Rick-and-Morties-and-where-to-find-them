@@ -11,7 +11,7 @@ const closemodalFactory = () => {
     });
   }
   function closeModalChar() {
-    document.querySelector('.closecharModal').addEventListener('click', () => {
+    document.querySelector('.closeModal').addEventListener('click', () => {
       document.querySelector('.charDiv').style.display = 'none';
     });
   }
