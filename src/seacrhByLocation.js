@@ -14,6 +14,8 @@ const LocationFactory = () => {
     document.body.appendChild(newScript);
     charLocEpi();
 
+    document.querySelector('.location').style.background = 'greenyellow';
+    document.querySelector('.location').style.color = 'black';
     const locDisplayArea = document.createElement('div');
     locDisplayArea.classList.add('locArea');
     document.body.appendChild(locDisplayArea);

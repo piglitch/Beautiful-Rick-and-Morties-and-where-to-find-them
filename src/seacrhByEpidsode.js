@@ -13,6 +13,8 @@ const episodeFactory = () => {
     document.body.appendChild(newScript);
     charLocEpi();
 
+    document.querySelector('.episode').style.background = 'greenyellow';
+    document.querySelector('.episode').style.color = 'black';
     const epiDisplayArea = document.createElement('div');
     epiDisplayArea.classList.add('epiArea');
     document.body.appendChild(epiDisplayArea);

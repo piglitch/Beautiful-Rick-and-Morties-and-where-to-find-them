@@ -13,6 +13,8 @@
     max-width: none;
     margin: 0;
     font-size: x-small;
+    max-width: 300px;
+    max-height: 400px;
   }
 }
 
@@ -21,6 +23,8 @@
     .locInput, .epiInput, .locSubmit, .sbmtBtn, .epiSubmit {
         max-width: none;
         font-size: x-small;
+        max-width: 200px;
+        max-height: 300px;
     }
 }
   
@@ -70,6 +74,10 @@ body{
   border: 1px solid greenyellow;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.5);
+}
+.image-char{
+  max-width: 344px;
+  max-height: 350px;
 }
 .buttons{
   display: flex;

@@ -10,12 +10,14 @@ const aboutFactory = () => {
     document.body.appendChild(newScript);
     charLocEpi();
 
+    document.querySelector('.about').style.background = 'greenyellow';
+    document.querySelector('.about').style.color = 'black';
     const aboutContainer = document.createElement('div');
     aboutContainer.className = 'aboutContainer';
     aboutContainer.innerHTML = `
         <div id="aboutContainer">
-            <h1  style="color: white">Beautiful Rick and Morties and where to find them</h1>
-            <p>Welcome to the Rick and Morty Explorer! This website is dedicated to helping you explore the fascinating world of Rick and Morty, the beloved animated series created by Justin Roiland and Dan Harmon.</p>
+            <h1  style="color: white">About Beautiful Rick and Morties and where to find them</h1>
+            <p>Welcome to the Beautiful Rick and Morties and where to find them! This website is dedicated to helping you explore the fascinating world of Rick and Morty, the beloved animated series created by Justin Roiland and Dan Harmon.</p>
 
             <h2 style="color: white">What is Rick and Morty?</h2>
             <p>Rick and Morty is an animated science fiction sitcom that follows the adventures of an eccentric, alcoholic scientist named Rick Sanchez and his good-hearted but easily influenced grandson, Morty Smith. Together, they embark on interdimensional escapades that take them to unimaginable places and introduce them to a multitude of bizarre characters.</p>

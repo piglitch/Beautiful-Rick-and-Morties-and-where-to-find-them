@@ -12,6 +12,8 @@ const characterFactory = () => {
     document.body.appendChild(newScript);
     charLocEpi();
 
+    document.querySelector('.character').style.background = 'greenyellow';
+    document.querySelector('.character').style.color = 'black';
     const body = document.querySelector('body');
     // Create the elements
     const charImageDiv = document.createElement('div');
@@ -97,6 +99,7 @@ const characterFactory = () => {
     const btn = document.querySelector('.sbmtBtn');
     btn.addEventListener('click', () => {
       const img = document.createElement('img');
+      img.classList.add('image-char');
       let character = '';
       img.innerHTML = '';
       character = document.querySelector('input').value;
@@ -111,8 +114,6 @@ const characterFactory = () => {
             });
             const responseJson = await response.json();
             img.src = responseJson.results[0].image;
-            img.height = 350;
-            img.width = 344;
             document.querySelector('.name').textContent = `Name: ${responseJson.results[0].name}`;
             document.querySelector('.species').textContent = `Species: ${responseJson.results[0].species}`;
             document.querySelector('.gender').textContent = `Gender: ${responseJson.results[0].gender}`;
