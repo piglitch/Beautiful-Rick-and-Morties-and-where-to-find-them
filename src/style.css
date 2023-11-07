@@ -12,7 +12,10 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
+    margin-left: 40%;
+  }
+  .char-input input{
+    height: 30px;
   }
   .char-image{
     height: 60%;
