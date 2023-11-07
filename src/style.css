@@ -10,6 +10,7 @@
   }  
   .charDiv {
     width: 100%;
+    margin-left: 50px;
   }
   .char-image{
     height: 60%;

@@ -15,7 +15,7 @@ const aboutFactory = () => {
     const aboutContainer = document.createElement('div');
     aboutContainer.className = 'aboutContainer';
     aboutContainer.innerHTML = `
-        <div id="aboutContainer">
+        <div>
             <h1  style="color: white">About Beautiful Rick and Morties and where to find them</h1>
             <p>Welcome to the Beautiful Rick and Morties and where to find them! This website is dedicated to helping you explore the fascinating world of Rick and Morty, the beloved animated series created by Justin Roiland and Dan Harmon.</p>
 
