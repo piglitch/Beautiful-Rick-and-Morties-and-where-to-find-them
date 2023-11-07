@@ -2,78 +2,7 @@
 
   /* Styles for screens smaller than 768px wide */
   /* Adjust font sizes, margins, padding, etc. */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-  body{
-    font-size: larger;
-    margin: 0;
-  }  
-  .charDiv {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40%;
-  }
-  .char-input input{
-    height: 30px;
-  }
-  .char-image{
-    height: 60%;
-  }
-  .sbmtBtn{
-    width: 120px;
-    height: 80px;
-  }
-  .locDiv{
-    min-width: 80%;
-  }
-  .details{
-    width: 100%;
-  }
-  .details .closeModal{
-    padding: 5px;
-    margin-left: 95%;
-  }
-  .buttons button{
-    height: 200px
-  }
-  .aboutContainer{
 
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-    /* Further adjustments for smaller screens */
-    body{
-      font-size: larger;
-      margin: 0;
-    }  
-    .charDiv {
-      width: 100%;
-    }
-    .char-image{
-      height: 60%;
-    }
-    .char-input{
-      height: 100%;
-    }
-    .locDiv{
-      width: 100%;
-    }
-    .details .closeModal{
-      padding: 5px;
-      margin-left: 95%;
-    }
-    .buttons button{
-      height: 200px
-    }
-    .aboutContainer{
-      width: 100%;
-
-    }
-}
-  
 
 body{
   font-family: 'IBM Plex Mono', monospace;
@@ -100,12 +29,13 @@ body{
   border: 1px solid greenyellow;
   border-radius: 5px;
   border-top: none;
-  max-height: 16%;
+  height: 20px;
+  width: fit-content;
 }
 .details{
   border: 1px solid greenyellow;
-  max-width: 70%;
-  min-width: 40%;
+  width: 550px;
+  height: 400px;
   backdrop-filter: blur(5px);
   border-radius: 5px;
   padding: 10px;
@@ -122,8 +52,8 @@ body{
   border: 1px solid greenyellow;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.5);
-  min-height: 80%;
-  max-width: 100%;
+  width: 365px;
+  height: 369px;
 }
 .image-char{
   width: 100%;
@@ -184,7 +114,6 @@ body{
   border-top: none;
   padding-bottom: 15px;
   min-width: 34%;
-  max-width: 80%;
 }
 .locDiv{
   display: flex;
@@ -247,7 +176,6 @@ body{
   border-top: none;
   padding-bottom: 15px;
   min-width: 34%;
-  max-width: 80%;
 }
 .epiDiv{
   display: flex;
