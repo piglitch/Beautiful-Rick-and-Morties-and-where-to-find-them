@@ -86,6 +86,7 @@ const characterFactory = () => {
     detailsDiv.appendChild(statusDiv);
 
     const charImageAndInputDiv = document.createElement('div');
+    charImageAndInputDiv.classList.add('charImageAndInputDiv');
     charImageAndInputDiv.appendChild(charImageDiv);
     charImageAndInputDiv.appendChild(charInputDiv);
 

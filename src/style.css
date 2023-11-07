@@ -1,30 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
 
-
   /* Styles for screens smaller than 768px wide */
   /* Adjust font sizes, margins, padding, etc. */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
   body{
     font-size: smaller;
   }
-  .details, .locArea, .epiArea, .aboutContainer, .char-image, .locDiv, .epiDiv, .charDiv {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    font-size: x-small;
-    max-width: 300px;
-    max-height: 400px;
+  .charDiv {
+    max-width: 90%;
+  }
+  .char-image{
+    height: 60%;
+  }
+  .locDiv{
+    min-width: 80%;
+  }
+  .details .closeModal{
+    padding: 5px;
+    margin-left: 95%;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     /* Further adjustments for smaller screens */
-    .locInput, .epiInput, .locSubmit, .sbmtBtn, .epiSubmit {
-        max-width: none;
-        font-size: x-small;
-        max-width: 200px;
-        max-height: 300px;
+    .charDiv {
+      max-width: 100%;
+    }
+    .locDiv{
+      min-width: 80%;
+    }
+    .char-image{
+      height: 60%;
+    }
+    .details .closeModal{
+      padding: 5px;
+      margin-left: 95%;
     }
 }
   
@@ -45,39 +56,43 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2px;
+  padding: 20px;
 }
 .char-input{
   background: black;
   width: fit-content;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid greenyellow;
   border-radius: 5px;
   border-top: none;
+  max-height: 16%;
 }
 .details{
   border: 1px solid greenyellow;
-  width: 450px;
-  height: 250px;
+  max-width: 70%;
+  min-width: 40%;
   backdrop-filter: blur(5px);
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.5);
   color: greenyellow;
   font-size: larger;
   font-weight: 900;
 }
+.details .closeModal{
+  margin-left: 85%;
+}
 .char-image{
-  width: 344px;
-  height: 350px;
   backdrop-filter: blur(5px);
   border: 1px solid greenyellow;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.5);
+  min-height: 80%;
+  max-width: 100%;
 }
 .image-char{
-  width: 344px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
 }
 .buttons{
   display: flex;
@@ -102,8 +117,6 @@ body{
   color: black;
 }
 .locArea{
-  width: 450px;
-  height: 200px;
   border: 1px solid greenyellow;
   padding: 50px;
   color: greenyellow;
@@ -112,6 +125,8 @@ body{
   backdrop-filter: blur(5px);
   border-radius: 5px;
   background:  rgba(0, 0, 0, 0.5);
+  min-height: 250px;
+  min-width: 30%;
 }
 .locInput{
   width: 480px;
@@ -126,19 +141,25 @@ body{
   display: flex;
   justify-content: space-between;
   background: black;
-  width: 536px;
+  max-width: 450px;
   padding: 8px;
   border: 1px solid greenyellow;
   border-radius: 5px;
-  gap: 10px;
+  gap: 5px;
   border-top: none;
   padding-bottom: 15px;
+  min-width: 34%;
+  max-width: 80%;
 }
 .locDiv{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 180px;
+}
+.locDiv .closeModal{
+  margin-left: 100%;
 }
 .locSubmit{
   background : none;
@@ -167,9 +188,7 @@ body{
   color: black;
   background: greenyellow;
 }
-.epiArea{  
-  width: 450px;
-  height: 200px;
+.epiArea{
   border: 1px solid greenyellow;
   padding: 50px;
   color: greenyellow;
@@ -178,24 +197,31 @@ body{
   backdrop-filter: blur(5px);
   border-radius: 5px;
   background:  rgba(0, 0, 0, 0.5);
+  min-height: 250px;
+  min-width: 30%;
 }
-.epiInputDiv{  
+.epiInputDiv{   
   display: flex;
   justify-content: space-between;
   background: black;
-  width: 534px;
+  max-width: 450px;
   padding: 8px;
   border: 1px solid greenyellow;
   border-radius: 5px;
-  gap: 10px;
+  gap: 5px;
   border-top: none;
   padding-bottom: 15px;
+  min-width: 34%;
+  max-width: 80%;
 }
 .epiDiv{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 180px;
+}
+.epiDiv .closeModal{
+  margin-left: 100%;
 }
 .epiInput{
   width: 480px;
@@ -222,15 +248,19 @@ body{
 }
 .closeModal{
   fill: rgb(133, 133, 133);
-  margin-left: 420px;
+  margin-left: 85%;
   cursor: pointer;
   transition: .2s ease-in-out;
+  scale: 1.5;
+  width: 20px;
+  height: 20px;
 }
 .closeModal:hover{
-  scale: 1.5;
   fill: rgb(255, 0, 0);
 }
 .aboutContainer{
+  max-width: 100%;
+  height: 100%;
   padding: 25px;
   border-left: 1px solid greenyellow;
   border-right: 1px solid greenyellow;
