@@ -13,6 +13,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-left: 50%;
   }
   .char-image{
     height: 60%;
