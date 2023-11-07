@@ -9,9 +9,9 @@
     margin: 0;
   }  
   .charDiv {
+    padding: 50px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
   }
   .char-image{
     height: 60%;
