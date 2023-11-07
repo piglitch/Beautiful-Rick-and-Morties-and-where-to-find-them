@@ -20,6 +20,9 @@
   .locDiv{
     min-width: 80%;
   }
+  .details{
+    width: 450px;
+  }
   .details .closeModal{
     padding: 5px;
     margin-left: 95%;
