@@ -43,8 +43,11 @@
     .char-image{
       height: 60%;
     }
+    .char-input{
+      height: 100%;
+    }
     .locDiv{
-      min-width: 80%;
+      width: 100%;
     }
     .details .closeModal{
       padding: 5px;
