@@ -9,7 +9,7 @@
     margin: 0;
   }  
   .charDiv {
-    width: 90%;
+    width: 100%;
   }
   .char-image{
     height: 60%;
@@ -34,24 +34,26 @@
 @media screen and (max-width: 480px) {
     /* Further adjustments for smaller screens */
     body{
-      margin: 0;
       font-size: larger;
-      width: 100%;
-    }
+      margin: 0;
+    }  
     .charDiv {
-      max-width: 100%;
-    }
-    .locDiv{
-      min-width: 80%;
+      width: 100%;
     }
     .char-image{
       height: 60%;
     }
+    .locDiv{
+      min-width: 80%;
+    }
     .details .closeModal{
       padding: 5px;
       margin-left: 95%;
-    }  
-    .aboutContainer{ 
+    }
+    .buttons button{
+      height: 200px
+    }
+    .aboutContainer{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
