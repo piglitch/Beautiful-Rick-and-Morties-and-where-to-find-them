@@ -4,9 +4,7 @@
   /* Adjust font sizes, margins, padding, etc. */
 @media screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
-  body{
-    font-size: smaller;
-  }
+
   .charDiv {
     max-width: 90%;
   }
