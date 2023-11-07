@@ -17,11 +17,15 @@
   .char-image{
     height: 60%;
   }
+  .sbmtBtn{
+    width: 120px;
+    height: 80px;
+  }
   .locDiv{
     min-width: 80%;
   }
   .details{
-    width: 450px;
+    width: 100%;
   }
   .details .closeModal{
     padding: 5px;
